@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../index.css">
+  <title>Internet shop</title>
+</head>
+<body>
+  <div class="div-wrapper">
+    <div class="left-block">
+      <ul id="category-list" class="no-marker">
+        <li id="sports" class="item">Sport</li>
+        <li id="clothes" class="item">Clothes</li>
+        <li id="musicalInstruments" class="item">Musical Instruments</li>
+      </ul>
+      <button type="button" id="purchaseButtn">My purchases</button>
+      <div id="customerPurchasesDiv"></div>
+    </div>
+    <div class="middle-block">
+        <ul id="item-list" class="no-marker"></ul>
+    </div>
+    <div id="description" class="right-block">
+     
+    </div>
+  </div>
+
+  <form class="hide" id="customerForm">
+    <div class="form-box">
+      <label>First and last name:</label>
+      <input type="text" id="firstName" placeholder="First name">
+      <input type="text" id="lastName" placeholder="Last name">
+      <label>City:</label>
+      <select name="cities" id="cities" >
+        <option value="">--Please choose an option--</option>
+        <option value="Kiev">Kiev</option>
+        <option value="Dnipro">Dnipro</option>
+        <option value="Lviv">Lviv</option>
+        <option value="Kharkov">Kharkov</option>
+        <option value="Odessa">Odessa</option>
+      </select>
+      <label>Nova Poshta office number:</label>
+      <input type="number" id="officeNum">
+      <label>Payment:</label>
+      <div>
+        <input type="radio" name="payment" value="Bank card" id="card" >
+        <label for="paymentChoice1">Bank card</label>
+        <input type="radio" name="payment" value="Cash on delivery" id="cash" >
+        <label for="paymentChoice2">Cash on delivery</label>
+      </div>
+      <label>Quantity:</label>
+      <input type="number" id="quantity">
+      <label>Comments:</label>
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <button type="submit" id="approveButtn">Approve the purchase</button>
+    </div>
+  </form>
+
+  <div id="orderInfo" class="hide">
+    <h2>Your order information</h2>
+    <p id="customerName"></p>
+  
+    <p id="customerCity"></p>
+  
+    <p id="customerOfficeNum"></p>
+  
+    <p id="customerPayment"></p>
+    
+    <p id="customerItem"></p>
+
+    <p id="customerQuantity"></p>
+    
+    <p id="customerComments"></p>
+  </div>
+
+  
+</body>
+<script src="../index.js"></script>
+</html> 
