@@ -1,0 +1,68 @@
+.div-wrapper {
+  display: flex;
+}
+
+.left-block {
+  width: 300px;
+  height: 500px;
+  background-color: yellow;
+}
+
+.middle-block {
+  width: 300px;
+  height: 500px;
+  background-color: brown;
+}
+
+.right-block {
+  width: 300px;
+  height: 500px;
+  background-color: violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-marker {
+  list-style-type: none;
+}
+
+.item {
+  cursor: pointer;
+  max-width: 65px;
+  margin-bottom: 10px;
+}
+
+.image {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 20px;
+}
+
+.descrip-header {
+  margin-top: 20px;
+}
+
+.descrip-content {
+  margin: 10px;
+  text-align: justify;
+}
+
+
+.hide {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+}
+
+h5 {
+  margin: 5px;
+}
